@@ -7,26 +7,40 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="style.css">
+  <script defer>
+    const menuOpen = () => document.getElementById('headerMenu').classList.add('header__menu--open')
+    const menuClose = () => document.getElementById('headerMenu').classList.remove('header__menu--open')
+  </script>
 </head>
 
 <body>
-  <header>
-    <!-- snap logo -->
+  <header class="header">
+    <img class="header__logo" src="images/logo.svg" alt="snap logo">
 
-    <!-- menu button -->
+    <img onclick="menuOpen()" class="header__menu-open" src="images/icon-menu.svg" alt="menu button">
 
-    <div>
-      <nav>
-        <ul>
-          <li>Features</li>
-          <li>Company</li>
+    <div id="headerMenu" class="header__menu">
+      <img onclick="menuClose()" class="header__menu-close" src="images/icon-close-menu.svg" alt="close menu button">
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            Features
+            <img src="images/icon-arrow-down.svg" alt="more">
+          </li>
+          <li class="header__list-item">
+            Company
+            <img src="images/icon-arrow-down.svg" alt="more">
+          </li>
           <li>Careers</li>
           <li>About</li>
         </ul>
       </nav>
 
-      <button>Login</button>
-      <button>Register</button>
+      <div class="header__button-container">
+        <button class="header__button">Login</button>
+        <button class="header__button">Register</button>
+      </div>
     </div>
   </header>
 

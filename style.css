@@ -30,6 +30,10 @@ body {
   background-color: var(--Almost-White);
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   color: var(--Medium-Gray);
   list-style: none;
@@ -53,6 +57,37 @@ button {
   border-radius: 1rem;
 }
 
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 1rem;
+}
+
+.header__menu-open {
+  margin-left: auto;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__menu--open {
+  display: block;
+}
+
+.header__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  display: block;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -60,4 +95,31 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+
+  .header__logo {
+    margin-top: 1rem;
+  }
+
+  .header__menu-open,
+  .header__menu-close {
+    display: none;
+  }
+
+  .header__menu,
+  .header__list,
+  .header__button-container {
+    display: flex;
+  }
+
+  .header__menu {
+    width: 85%;
+    max-width: 75.75rem;
+  }
+
+  .header__button-container {
+    margin-left: auto;
+  }
 }
