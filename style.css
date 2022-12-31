@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
 :root {
-  --color-Almost-White: hsl(0, 0%, 98%);
-  --color-Medium-Gray: hsl(0, 0%, 41%);
-  --color-Almost-Black: hsl(0, 0%, 8%);
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
 
   --font-size: 18px;
   --font-medium: 500;
@@ -24,7 +24,33 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-size: var(--font-size);
   font-weight: normal;
+  font-family: 'Epilogue', sans-serif;
+  background-color: var(--Almost-White);
+}
+
+li {
+  color: var(--Medium-Gray);
+  list-style: none;
+}
+
+h1 {
+  font-weight: var(--font-bold);
+  color: var(--Almost-Black);
+}
+
+p {
+  font-weight: var(--font-medium);
+  color: var(--Medium-Gray);
+}
+
+button {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
 }
 
 .attribution {
