@@ -84,6 +84,10 @@ button {
   align-items: center;
 }
 
+.header__list-arrow {
+  margin-left: .5rem;
+}
+
 .header__button {
   display: block;
 }
@@ -117,6 +121,12 @@ button {
   .header__menu {
     width: 85%;
     max-width: 75.75rem;
+  }
+
+  .header__list li::after {
+    content: '';
+    display: inline-block;
+    width: clamp(.5rem, 2vw, 2.5rem);
   }
 
   .header__button-container {
