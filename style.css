@@ -30,15 +30,6 @@ body {
   background-color: var(--Almost-White);
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  color: var(--Medium-Gray);
-  list-style: none;
-}
-
 h1 {
   font-weight: var(--font-bold);
   color: var(--Almost-Black);
@@ -46,6 +37,11 @@ h1 {
 
 p {
   font-weight: var(--font-medium);
+  color: var(--Medium-Gray);
+}
+
+a {
+  text-decoration: none;
   color: var(--Medium-Gray);
 }
 
@@ -57,40 +53,44 @@ button {
   border-radius: 1rem;
 }
 
-.header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 1.5rem 1rem;
+ul {
+  padding: 0;
 }
 
-.header__menu-open {
-  margin-left: auto;
+li {
+  list-style: none;
 }
 
-.header__menu {
+.header__arrow {
+  margin: .2rem;
+}
+
+.header__more {
   display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
 }
 
-.header__menu--open {
+.header__icon {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1rem;
+}
+
+.header__login,
+.header__register {
   display: block;
+  background-color: var(--Almost-White);
 }
 
-.header__list-item {
-  display: flex;
-  align-items: center;
+.header__login {
+  border: none;
 }
 
-.header__list-arrow {
-  margin-left: .5rem;
-}
-
-.header__button {
-  display: block;
-}
+.header__register {}
 
 .attribution {
   font-size: 11px;
@@ -101,35 +101,24 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {}
 
-  .header__logo {
-    margin-top: 1rem;
-  }
+@media (min-width: 768px) and (max-width: 991px) {
 
-  .header__menu-open,
-  .header__menu-close {
+  .header__open,
+  .header__close {
     display: none;
   }
 
-  .header__menu,
-  .header__list,
-  .header__button-container {
-    display: flex;
-  }
-
-  .header__menu {
-    width: 85%;
-    max-width: 75.75rem;
-  }
-
-  .header__list li::after {
-    content: '';
+  .header__login,
+  .header__register {
     display: inline-block;
-    width: clamp(.5rem, 2vw, 2.5rem);
   }
 
-  .header__button-container {
-    margin-left: auto;
+  .header__list {
+    display: flex;
+    /* justify-content: space-evenly; */
   }
 }
+
+@media (min-width: 992px) {}
