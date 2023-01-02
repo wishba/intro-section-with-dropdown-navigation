@@ -61,7 +61,12 @@ li {
   list-style: none;
 }
 
+.header__menu.header__menu--opened {
+  display: block;
+}
+
 .header__menu {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -111,12 +116,7 @@ li {
 
 .header__login,
 .header__register {
-  display: block;
   width: 100%;
-}
-
-.header__login,
-.header__register {
   background-color: var(--Almost-White);
 }
 
@@ -150,6 +150,10 @@ li {
   .header__open,
   .header__close {
     display: none;
+  }
+
+  .header__menu.header__menu--opened {
+    display: flex;
   }
 
   .header__menu {
