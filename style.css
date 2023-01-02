@@ -169,6 +169,7 @@ li {
     display: flex;
     padding: 0;
     width: 100%;
+    margin-left: clamp(1.5rem, 3vw, 4rem);
   }
 
   .header__menu::after {
@@ -177,7 +178,7 @@ li {
 
   .header__list {
     display: flex;
-    /* gap: clamp(1rem, 2vw, 2.5rem); */
+    gap: clamp(.5rem, 2vw, 2.5rem);
   }
 
   .header__item {
