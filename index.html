@@ -20,7 +20,9 @@
     <img onclick="menuOpen()" class="header__open" src="images/icon-menu.svg" alt="menu button">
 
     <div id="headerMenu" class="header__menu">
-      <img onclick="menuClose()" class="header__close" src="images/icon-close-menu.svg" alt="close menu button">
+      <div class="header__close">
+        <img onclick="menuClose()" src="images/icon-close-menu.svg" alt="close menu button">
+      </div>
 
       <nav class="header__nav">
         <ul class="header__list">
@@ -28,19 +30,19 @@
             <a href="#">Features</a>
             <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
             <ul class="header__more">
-              <li class="header__icon">
+              <li class="header__icon header__icon--grid">
                 <img src="images/icon-todo.svg" alt="todo list">
                 <a href="#">Todo List</a>
               </li>
-              <li class="header__icon">
+              <li class="header__icon header__icon--grid">
                 <img src="images/icon-calendar.svg" alt="calendar">
                 <a href="#">Calendar</a>
               </li>
-              <li class="header__icon">
+              <li class="header__icon header__icon--grid">
                 <img src="images/icon-reminders.svg" alt="reminders">
                 <a href="#">Reminders</a>
               </li>
-              <li class="header__icon">
+              <li class="header__icon header__icon--grid">
                 <img src="images/icon-planning.svg" alt="planning">
                 <a href="#">Planning</a>
               </li>
@@ -50,13 +52,13 @@
             <a href="#">Company</a>
             <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
             <ul class="header__more">
-              <li>
+              <li class="header__icon">
                 <a href="#">History</a>
               </li>
-              <li>
+              <li class="header__icon">
                 <a href="#">Our Team</a>
               </li>
-              <li>
+              <li class="header__icon">
                 <a href="#">Blog</a>
               </li>
             </ul>
