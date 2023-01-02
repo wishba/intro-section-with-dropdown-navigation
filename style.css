@@ -130,4 +130,18 @@ li {
   }
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+  .header,
+  .header__menu,
+  .header__list,
+  .header__button {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .header__open,
+  .header__close {
+    display: none;
+  }
+}
