@@ -9,6 +9,12 @@ const moreFeature = () => {
     feature.classList.remove('header__more--open')
   }
 }
+const hoverInFeature = () => {
+  feature.classList.add('header__more--open')
+}
+const hoverOutFeature = () => {
+  feature.classList.remove('header__more--open')
+}
 
 const company = document.getElementById('moreCompany')
 const moreCompany = () => {
@@ -18,3 +24,10 @@ const moreCompany = () => {
     company.classList.remove('header__more--open')
   }
 }
+const hoverInCompany = () => {
+  company.classList.add('header__more--open')
+}
+const hoverOutCompany = () => {
+  company.classList.remove('header__more--open')
+}
+

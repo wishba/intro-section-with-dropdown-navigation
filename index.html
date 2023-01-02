@@ -24,9 +24,9 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a onclick="moreFeature()" href="#">Features</a>
+            <a onclick="moreFeature()" onmouseover="hoverInFeature()" href="#">Features</a>
             <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
-            <ul id="moreFeatures" class="header__more">
+            <ul onmouseover="hoverInFeature()" onmouseout="hoverOutFeature()" id="moreFeatures" class="header__more">
               <li class="header__icon header__icon--grid">
                 <img src="images/icon-todo.svg" alt="todo list">
                 <a href="#">Todo List</a>
@@ -46,9 +46,9 @@
             </ul>
           </li>
           <li class="header__item">
-            <a onclick="moreCompany()" href="#">Company</a>
+            <a onclick="moreCompany()" onmouseover="hoverInCompany()" href="#">Company</a>
             <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
-            <ul id="moreCompany" class="header__more">
+            <ul onmouseover="hoverInCompany()" onmouseout="hoverOutCompany()" id="moreCompany" class="header__more">
               <li class="header__icon">
                 <a href="#">History</a>
               </li>
