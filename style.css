@@ -272,6 +272,10 @@ li {
     margin: auto;
   }
 
+  h1 {
+    max-width: 11ch;
+  }
+
   .section__list {
     gap: 2.5rem;
   }
