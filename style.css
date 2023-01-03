@@ -160,6 +160,10 @@ li {
   .section__image>* {
     content: url(images/image-hero-mobile.png);
   }
+
+  .section__body {
+    margin: 1rem;
+  }
 }
 
 @media(min-width:450px) {
