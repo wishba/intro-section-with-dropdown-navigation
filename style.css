@@ -147,6 +147,16 @@ li {
   width: 100%;
 }
 
+.section__list {
+  display: flex;
+  width: 100%;
+  gap: 1.75rem;
+}
+
+.section__list img {
+  width: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -163,16 +173,6 @@ li {
 
   .section__body {
     margin: 1rem;
-  }
-
-  .section__list {
-    display: flex;
-    width: 100%;
-    gap: 1.75rem;
-  }
-
-  .section__list img {
-    width: 100%;
   }
 }
 
@@ -270,5 +270,9 @@ li {
     padding: 2.5rem;
     max-width: 76.5rem;
     margin: auto;
+  }
+
+  .section__list {
+    gap: 2.5rem;
   }
 }
