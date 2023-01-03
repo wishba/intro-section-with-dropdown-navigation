@@ -156,6 +156,12 @@ li {
   color: hsl(228, 45%, 44%);
 }
 
+@media(max-width:450px) {
+  .section__image>* {
+    content: url(images/image-hero-mobile.png);
+  }
+}
+
 @media(min-width:450px) {
 
   .section {
