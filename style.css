@@ -139,6 +139,14 @@ li {
   border: none;
 }
 
+.section>* {
+  max-width: 100%;
+}
+
+.section__image>* {
+  width: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -146,6 +154,28 @@ li {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:450px) {
+
+  .section {
+    display: flex;
+    width: 100%;
+    gap: clamp(.5rem, 10vw, 9.5rem);
+    padding: 1rem;
+  }
+
+  .section>* {
+    width: 50%;
+  }
+
+  .section__image {
+    order: 2;
+  }
+
+  .section__body {
+    order: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -214,5 +244,11 @@ li {
     display: flex;
     align-items: flex-start;
     margin-left: auto;
+  }
+
+  .section {
+    padding: 2.5rem;
+    max-width: 76.5rem;
+    margin: auto;
   }
 }
