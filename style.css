@@ -147,6 +147,12 @@ li {
   width: 100%;
 }
 
+.section__button {
+  border: none;
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+}
+
 .section__list {
   display: flex;
   width: 100%;
