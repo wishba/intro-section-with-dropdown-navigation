@@ -209,7 +209,7 @@ li {
   .header {
     display: flex;
     align-items: flex-start;
-    margin: 1.5rem 2.5rem;
+    margin: 1.5rem 2.5rem 0;
   }
 
   .header__logo {
@@ -273,7 +273,7 @@ li {
   }
 
   .section {
-    padding: 2.5rem;
+    padding: 0 2.5rem;
     max-width: 76.5rem;
     margin: auto;
     align-items: flex-end;
@@ -284,7 +284,21 @@ li {
     font-size: 4rem;
   }
 
+  p {
+    max-width: 45ch;
+  }
+
   .section__list {
     gap: 2.5rem;
+  }
+}
+
+@media (min-width: 935px) {
+  .section__button {
+    margin-top: 2.5vw;
+  }
+
+  .section__list {
+    margin-top: 7vw;
   }
 }
