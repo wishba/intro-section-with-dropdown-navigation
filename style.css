@@ -53,6 +53,10 @@ button {
   border-radius: 1rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 ul {
   padding: 0;
 }
@@ -133,10 +137,24 @@ li {
 .header__register {
   width: 100%;
   background-color: var(--Almost-White);
+  color: var(--Medium-Gray);
+}
+
+.header__login:hover,
+.header__register:hover {
+  color: var(--Almost-Black);
 }
 
 .header__login {
   border: none;
+}
+
+.header__register {
+  border-color: var(--Medium-Gray);
+}
+
+.header__register:hover {
+  border-color: var(--Almost-Black);
 }
 
 .section>* {
@@ -148,9 +166,15 @@ li {
 }
 
 .section__button {
-  border: none;
   background-color: var(--Almost-Black);
   color: var(--Almost-White);
+  border: 2px solid var(--Almost-Black);
+}
+
+.section__button:hover {
+  background-color: var(--Almost-White);
+  color: var(--Almost-Black);
+  border: 2px solid var(--Medium-Gray);
 }
 
 .section__list {
