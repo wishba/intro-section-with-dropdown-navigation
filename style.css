@@ -276,6 +276,7 @@ li {
     padding: 2.5rem;
     max-width: 76.5rem;
     margin: auto;
+    align-items: flex-end;
   }
 
   h1 {
