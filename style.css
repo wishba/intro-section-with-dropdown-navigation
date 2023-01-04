@@ -179,6 +179,15 @@ li {
 
   .section__body {
     margin: 1rem;
+    text-align: center;
+  }
+
+  .section__button {
+    margin-top: 1rem;
+  }
+
+  .section__list {
+    margin-top: 3rem;
   }
 }
 
