@@ -203,3 +203,54 @@ button {
 .footer {
   text-align: center;
 }
+
+@media (min-width:600px) {
+  .header {
+    margin: 1rem 2rem;
+  }
+
+  .header__container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__image {
+    position: static;
+    margin-top: 1rem;
+    margin-right: 3rem;
+  }
+
+  .header__open {
+    display: none;
+  }
+
+  .header__section {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: auto;
+  }
+
+  .header__item {
+    margin-right: 2rem;
+  }
+
+  .header__account {
+    display: block;
+  }
+
+  .header__login,
+  .header__register {
+    width: auto;
+    margin: 0;
+    display: inline;
+  }
+
+  .header__login {
+    padding: 1rem 1.5rem 1rem 0;
+  }
+
+  .header__register {
+    padding: 1rem 1.5rem;
+  }
+}
