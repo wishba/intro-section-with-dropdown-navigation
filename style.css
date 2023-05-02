@@ -118,6 +118,16 @@ button {
   content: url(images/icon-arrow-up.svg);
 }
 
+.header__feature,
+.header__company {
+  display: none;
+}
+
+.header__feature.header__feature--open,
+.header__company.header__company--open {
+  display: block;
+}
+
 .header__more {
   margin: 1rem 0 1rem 1rem;
 }
