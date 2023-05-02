@@ -12,6 +12,12 @@
 html {
   box-sizing: border-box;
   font-size: 18px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: var(--color-white);
 }
 
 *,
@@ -43,4 +49,104 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.header.header--open {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.header__container {
+  background-color: var(--color-white);
+  margin-left: calc(100vw - 15rem);
+  height: 100%;
+}
+
+.header__image {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.header__open {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.header__open.header__open--invisible {
+  display: none;
+}
+
+.header__close {
+  display: none;
+}
+
+.header__close.header__close--visible {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.header__section {
+  display: none;
+}
+
+.header__section.header__section--visible {
+  display: block;
+  padding: 5rem 0 0 1.5rem;
+}
+
+.header__item {
+  margin-bottom: 1rem;
+}
+
+.header__arrow.header__arrow--up {
+  content: url(images/icon-arrow-up.svg);
+}
+
+.header__more {
+  margin: 1rem 0 1rem 1rem;
+}
+
+.header__icon {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+}
+
+.header__account {
+  display: none;
+}
+
+.header__account.header__account--visible {
+  display: block;
+}
+
+.header__login,
+.header__register {
+  display: block;
+  width: calc(100% - 3rem);
+  margin: 0 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  border-color: var(--color-gray);
+}
+
+.header__login {
+  border: none;
 }

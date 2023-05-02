@@ -10,50 +10,67 @@
 </head>
 
 <body>
-  <header>
-    <div>
-      <img src="images/logo.svg" alt="logo">
-    </div>
+  <!-- <header class="header"> -->
+  <header class="header header--open">
+    <div class="header__container">
+      <div class="header__image">
+        <img src="images/logo.svg" alt="logo">
+      </div>
 
-    <div>
-      <img src="images/icon-menu.svg" alt="open menu">
-    </div>
+      <!-- <div class="header__open"> -->
+      <div class="header__open header__open--invisible">
+        <img src="images/icon-menu.svg" alt="open menu">
+      </div>
 
-    <div>
-      <img src="images/icon-close-menu.svg" alt="close menu">
-    </div>
+      <!-- <div class="header__close"> -->
+      <div class="header__close header__close--visible">
+        <img src="images/icon-close-menu.svg" alt="close menu">
+      </div>
 
-    <ul>
-      <li>
-        <a href="#">
-          <span>Features</span>
-          <img src="images/icon-arrow-down.svg" alt="more">
-        </a>
-        <ul>
-          <li><a href="#"><img src="images/icon-todo.svg" alt="todo">Todo List</a></li>
-          <li><a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
-          <li><a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
-          <li><a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <span>Company</span>
-          <img src="images/icon-arrow-down.svg" alt="more">
-        </a>
-        <ul>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
+      <!-- <ul class="header__section"> -->
+      <ul class="header__section header__section--visible">
+        <li class="header__item">
+          <a href="#">
+            <span>Features</span>
+            <!-- <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more"> -->
+            <img class="header__arrow header__arrow--up" src="images/icon-arrow-down.svg" alt="more">
+          </a>
+          <ul>
+            <li class="header__more">
+              <a class="header__icon" href="#"><img src="images/icon-todo.svg" alt="todo">Todo List</a>
+            </li>
+            <li class="header__more">
+              <a class="header__icon" href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a>
+            </li>
+            <li class="header__more">
+              <a class="header__icon" href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a>
+            </li>
+            <li class="header__more">
+              <a class="header__icon" href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__item">
+          <a href="#">
+            <span>Company</span>
+            <!-- <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more"> -->
+            <img class="header__arrow header__arrow--up" src="images/icon-arrow-down.svg" alt="more">
+          </a>
+          <ul>
+            <li class="header__more"><a href="#">History</a></li>
+            <li class="header__more"><a href="#">Our Team</a></li>
+            <li class="header__more"><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li class="header__item"><a href="#">Careers</a></li>
+        <li class="header__item"><a href="#">About</a></li>
+      </ul>
 
-    <div>
-      <button>Login</button>
-      <button>Register</button>
+      <!-- <div class="header__account"> -->
+      <div class="header__account header__account--visible">
+        <button class="header__login">Login</button>
+        <button class="header__register">Register</button>
+      </div>
     </div>
   </header>
 
