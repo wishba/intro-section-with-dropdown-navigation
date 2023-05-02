@@ -39,6 +39,7 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: var(--font-normal);
+  color: var(--color-gray);
 }
 
 ol,
@@ -159,4 +160,46 @@ button {
 
 .header__login {
   border: none;
+}
+
+.main {
+  text-align: center;
+}
+
+.main__head {
+  padding-top: 5rem;
+}
+
+.main__image {
+  content: url(images/image-hero-mobile.png);
+}
+
+.main__h1 {
+  font-weight: var(--font-bold);
+  margin: 2rem 1rem;
+}
+
+.main__p {
+  margin: 2rem;
+}
+
+.main__button {
+  margin: 0 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  font-weight: var(--font-bold);
+}
+
+.main__client {
+  display: flex;
+  /* width: 100%; */
+  margin: 3rem 2rem;
+  justify-content: space-between;
+}
+
+.footer {
+  text-align: center;
 }
