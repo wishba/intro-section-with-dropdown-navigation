@@ -6,111 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <header class="header">
-    <img class="header__logo" src="images/logo.svg" alt="snap logo">
+  <header>
+    <div>
+      <img src="images/logo.svg" alt="logo">
+    </div>
 
-    <img onclick="menuOpen()" class="header__open" src="images/icon-menu.svg" alt="menu button">
+    <div>
+      <img src="images/icon-menu.svg" alt="open menu">
+    </div>
 
-    <div id="headerMenu" class="header__menu">
-      <div class="header__close">
-        <img onclick="menuClose()" src="images/icon-close-menu.svg" alt="close menu button">
-      </div>
+    <div>
+      <img src="images/icon-close-menu.svg" alt="close menu">
+    </div>
 
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a onclick="moreFeature()" href="#">Features</a>
-            <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
-            <ul onmouseover="hoverInFeature()" onmouseout="hoverOutFeature()" id="moreFeatures" class="header__more">
-              <li class="header__icon header__icon--grid">
-                <img src="images/icon-todo.svg" alt="todo list">
-                <a href="#">Todo List</a>
-              </li>
-              <li class="header__icon header__icon--grid">
-                <img src="images/icon-calendar.svg" alt="calendar">
-                <a href="#">Calendar</a>
-              </li>
-              <li class="header__icon header__icon--grid">
-                <img src="images/icon-reminders.svg" alt="reminders">
-                <a href="#">Reminders</a>
-              </li>
-              <li class="header__icon header__icon--grid">
-                <img src="images/icon-planning.svg" alt="planning">
-                <a href="#">Planning</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__item">
-            <a onclick="moreCompany()" href="#">Company</a>
-            <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
-            <ul onmouseover="hoverInCompany()" onmouseout="hoverOutCompany()" id="moreCompany" class="header__more">
-              <li class="header__icon">
-                <a href="#">History</a>
-              </li>
-              <li class="header__icon">
-                <a href="#">Our Team</a>
-              </li>
-              <li class="header__icon">
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__item">
-            <a href="#">Careers</a>
-          </li>
-          <li class="header__item">
-            <a href="#">About</a>
-          </li>
+    <ul>
+      <li>
+        <a href="#">
+          <span>Features</span>
+          <img src="images/icon-arrow-down.svg" alt="more">
+        </a>
+        <ul>
+          <li><a href="#"><img src="images/icon-todo.svg" alt="todo">Todo List</a></li>
+          <li><a href="#"><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
+          <li><a href="#"><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
+          <li><a href="#"><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
         </ul>
-      </nav>
+      </li>
+      <li>
+        <a href="#">
+          <span>Company</span>
+          <img src="images/icon-arrow-down.svg" alt="more">
+        </a>
+        <ul>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
 
-      <div class="header__button">
-        <button class="header__login">Login</button>
-        <button class="header__register">Register</button>
-      </div>
+    <div>
+      <button>Login</button>
+      <button>Register</button>
     </div>
   </header>
 
-  <section class="section">
-    <div class="section__image">
-      <img src="images/image-hero-desktop.png" alt="remote work">
+  <main>
+    <div>
+      <img src="images/image-hero-desktop.png" alt="main image">
     </div>
 
-    <div class="section__body">
+    <div>
       <h1>Make remote work</h1>
-
       <p>
         Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.
       </p>
+      <button>Learn more</button>
 
-      <button class="section__button">Learn more</button>
-
-      <ul class="section__list">
-        <li>
-          <img src="images/client-databiz.svg" alt="databiz">
-        </li>
-        <li>
-          <img src="images/client-audiophile.svg" alt="audiophile">
-        </li>
-        <li>
-          <img src="images/client-meet.svg" alt="meet">
-        </li>
-        <li>
-          <img src="images/client-maker.svg" alt="maker">
-        </li>
+      <ul>
+        <li><img src="images/client-databiz.svg" alt="client-databiz"></li>
+        <li><img src="images/client-audiophile.svg" alt="client-audiophile"></li>
+        <li><img src="images/client-meet.svg" alt="client-meet"></li>
+        <li><img src="images/client-maker.svg" alt="client-maker"></li>
       </ul>
     </div>
-  </section>
+  </main>
 
-  <footer class="attribution">
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://linktr.ee/wishba" target="_blank">Wisnu Bayu</a>.
+    Coded by <a href="linktr.ee/wishba" target="_blank">Wisnu Bayu</a>.
   </footer>
 </body>
 
