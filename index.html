@@ -7,36 +7,31 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <header class="header">
-    <!-- <header class="header header--open"> -->
+  <header id="header" class="header">
     <div class="header__container">
       <div class="header__image">
         <img src="images/logo.svg" alt="logo">
       </div>
 
-      <div class="header__open">
-        <!-- <div class="header__open header__open--invisible"> -->
+      <div id="header-open" class="header__open" onclick="openNav()">
         <img src="images/icon-menu.svg" alt="open menu">
       </div>
 
-      <div class="header__close">
-        <!-- <div class="header__close header__close--visible"> -->
+      <div id="header-close" class="header__close" onclick="closeNav()">
         <img src="images/icon-close-menu.svg" alt="close menu">
       </div>
 
-      <ul class="header__section">
-        <!-- <ul class="header__section header__section--visible"> -->
+      <ul id="header-section" class="header__section">
         <li class="header__item">
-          <a href="#">
+          <a onclick="moreFeature()" href="#">
             <span>Features</span>
-            <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
-            <!-- <img class="header__arrow header__arrow--up" src="images/icon-arrow-down.svg" alt="more"> -->
+            <img id="header-feature-arrow" class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
           </a>
-          <ul class="header__feature">
-            <!-- <ul class="header__feature header__feature--open"> -->
+          <ul id="header-feature" class="header__feature">
             <li class="header__more">
               <a class="header__icon" href="#"><img src="images/icon-todo.svg" alt="todo">Todo List</a>
             </li>
@@ -52,13 +47,11 @@
           </ul>
         </li>
         <li class="header__item">
-          <a href="#">
+          <a onclick="moreCompany()" href="#">
             <span>Company</span>
-            <img class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
-            <!-- <img class="header__arrow header__arrow--up" src="images/icon-arrow-down.svg" alt="more"> -->
+            <img id="header-company-arrow" class="header__arrow" src="images/icon-arrow-down.svg" alt="more">
           </a>
-          <ul class="header__company">
-            <!-- <ul class="header__company header__company--open"> -->
+          <ul id="header-company" class="header__company">
             <li class="header__more"><a href="#">History</a></li>
             <li class="header__more"><a href="#">Our Team</a></li>
             <li class="header__more"><a href="#">Blog</a></li>
@@ -68,8 +61,7 @@
         <li class="header__item"><a href="#">About</a></li>
       </ul>
 
-      <div class="header__account">
-        <!-- <div class="header__account header__account--visible"> -->
+      <div id="header-account" class="header__account">
         <button class="header__login">Login</button>
         <button class="header__register">Register</button>
       </div>
