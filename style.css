@@ -58,9 +58,17 @@ a {
   color: var(--color-gray);
 }
 
+a:hover {
+  color: var(--color-black);
+}
+
 button {
   font-family: inherit;
   font-size: inherit;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .header.header--open {
@@ -163,6 +171,15 @@ button {
   border: none;
 }
 
+.header__login:hover {
+  color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+.header__register:hover {
+  color: var(--color-black);
+}
+
 .main {
   text-align: center;
 }
@@ -191,8 +208,13 @@ button {
   padding: 1rem 1.5rem;
   background-color: var(--color-black);
   color: var(--color-white);
-  border: none;
   font-weight: var(--font-bold);
+  border-color: var(--color-black);
+}
+
+.main__button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .main__client {
