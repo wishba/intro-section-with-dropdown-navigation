@@ -316,7 +316,7 @@ button:hover {
   .main__head {
     padding: 0;
     grid-area: 1/2/2/3;
-    margin: auto;
+    margin-left: auto;
   }
 
   .main__image {
@@ -328,7 +328,6 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    margin: auto;
   }
 
   .main__p,
