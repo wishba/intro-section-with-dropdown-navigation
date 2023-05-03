@@ -199,10 +199,15 @@ button {
   display: flex;
   margin: 3rem 2rem;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .footer {
   text-align: center;
+}
+
+.footer__link {
+  color: var(--color-black);
 }
 
 @media (min-width:600px) {
