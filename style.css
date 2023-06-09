@@ -15,8 +15,21 @@ body {
   height: 100%;
 }
 
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
 .nav__menu {
   margin: 0;
+}
+
+.nav__menu div {
+  display: flex;
+  align-items: center;
 }
 
 .nav__menu ul {
@@ -24,12 +37,9 @@ body {
   background-color: white;
 }
 
-nav ul {
-  padding: 0;
-}
-
-nav li {
-  list-style: none;
+.nav__more li {
+  display: flex;
+  align-items: center;
 }
 
 .main__image {
