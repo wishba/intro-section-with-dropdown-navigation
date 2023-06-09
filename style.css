@@ -79,11 +79,11 @@ nav li {
   border: 2.5px solid var(--Medium-Gray);
 }
 
-.main__image {
+.hero__image {
   max-width: 100%;
 }
 
-.main__client {
+.content__client {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -103,7 +103,7 @@ nav li {
 @media (max-width:600px) {
 
   header,
-  main>div {
+  .content {
     padding: 1.5rem 1rem;
   }
 
@@ -136,22 +136,22 @@ nav li {
     width: 100%;
   }
 
-  .main__image {
+  .hero__image {
     content: url(images/image-hero-mobile.png);
   }
 
-  .main__client {
+  .content__client {
     justify-content: space-evenly;
   }
 }
 
 @media (min-width:600px) {
-  body {
-    padding: 2rem 2.5rem;
-  }
 
   header {
+    padding: 2rem 2.5rem;
     flex-wrap: wrap;
+    display: flex;
+    align-items: start;
   }
 
   .logo {
@@ -165,6 +165,10 @@ nav li {
   .menu__open,
   .menu__close {
     display: none;
+  }
+
+  .nav__menu {
+    display: flex;
   }
 
   .nav__menu>* {
@@ -201,21 +205,21 @@ nav li {
     padding: 1rem 1.5rem;
   }
 
-  header {
-    display: flex;
-    align-items: start;
-  }
-
-  .nav__menu {
-    display: flex;
-  }
-
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 2.5rem;
+    gap: 2rem;
   }
 
-  .main__image {
-    grid-area: 1/2/2/3;
+  main h1 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:915px) {
+  main {
+    margin: 0 clamp(1rem, 9vw, 8rem);
+    gap: clamp(1rem, 9vw, 8rem);
   }
 }
