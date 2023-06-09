@@ -102,6 +102,11 @@ nav li {
 
 @media (max-width:600px) {
 
+  header,
+  main>div {
+    padding: 1.5rem 1rem;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -141,6 +146,21 @@ nav li {
 }
 
 @media (min-width:600px) {
+  body {
+    padding: 2rem 2.5rem;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin: 0 3.5rem 1rem 0;
+  }
+
+  nav {
+    margin-right: 14rem;
+  }
 
   .menu__open,
   .menu__close {
@@ -173,8 +193,8 @@ nav li {
 
   .user {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 2.5rem;
   }
 
   .user button {
