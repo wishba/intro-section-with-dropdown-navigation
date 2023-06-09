@@ -17,7 +17,9 @@
     <div class="opacity__low"></div>
 
     <nav id="nav">
-      <img class="menu__close" src="images/icon-close-menu.svg" alt="close">
+      <div class="menu__close">
+        <img src="images/icon-close-menu.svg" alt="close">
+      </div>
 
       <ul class="nav__menu">
         <li>
@@ -25,6 +27,7 @@
             <a href="#">Features</a>
             <img src="images/icon-arrow-down.svg" alt="more">
           </div>
+
           <ul class="nav__more">
             <li>
               <img src="images/icon-todo.svg" alt="icon-todo">
@@ -49,7 +52,8 @@
             <a href="#">Company</a>
             <img src="images/icon-arrow-down.svg" alt="more">
           </div>
-          <ul>
+
+          <ul class="nav__more">
             <li><a href="#">History</a></li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Blog</a></li>
@@ -64,8 +68,8 @@
       </ul>
 
       <div class="user">
-        <button>Login</button>
-        <button>Register</button>
+        <button class="user__login">Login</button>
+        <button class="user__register">Register</button>
       </div>
     </nav>
   </header>

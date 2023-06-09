@@ -1,18 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--Medium-Gray);
+}
+
+button {
+  font-family: inherit;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  font-size: inherit;
 }
 
 body {
   margin: 0;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  background-color: var(--Almost-White);
 }
 
 .opacity__low {
+  /* display: none; */
   position: absolute;
   top: 0;
   background-color: hsla(0, 0%, 0%, 0.5);
   width: 100%;
   height: 100%;
+}
+
+.menu__close {
+  text-align: right;
 }
 
 nav ul {
@@ -27,19 +50,33 @@ nav li {
   margin: 0;
 }
 
+.nav__menu li,
 .nav__menu div {
+  margin-bottom: 1rem;
+}
+
+.nav__menu div,
+.nav__more li {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .nav__menu ul {
   /* display: none; */
-  background-color: white;
 }
 
-.nav__more li {
-  display: flex;
-  align-items: center;
+.user button {
+  color: var(--Medium-Gray);
+  background-color: transparent;
+}
+
+.user__login {
+  border: none;
+}
+
+.user__register {
+  border: 2.5px solid var(--Medium-Gray);
 }
 
 .main__image {
@@ -76,7 +113,17 @@ nav li {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: white;
+    padding: 1.5rem;
+    background-color: var(--Almost-White);
+    height: 100%;
+  }
+
+  .nav__menu {
+    margin-top: 2rem;
+  }
+
+  .nav__more li {
+    margin-left: 1.5rem;
   }
 
   .user button {
@@ -105,6 +152,7 @@ nav li {
 
   .nav__menu ul {
     position: absolute;
+    background-color: white;
   }
 
   .user {
