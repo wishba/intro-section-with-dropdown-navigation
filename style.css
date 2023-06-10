@@ -11,6 +11,10 @@ a {
   color: var(--Medium-Gray);
 }
 
+a:hover {
+  color: var(--Almost-Black);
+}
+
 button {
   font-family: inherit;
   padding: 1rem 0;
@@ -76,12 +80,20 @@ nav li {
   background-color: transparent;
 }
 
+.user button:hover {
+  color: var(--Almost-Black);
+}
+
 .user__login {
   border: none;
 }
 
 .user__register {
   border: 2.5px solid var(--Medium-Gray);
+}
+
+.user__register:hover {
+  border: 2.5px solid var(--Almost-Black);
 }
 
 .hero__image {
@@ -100,6 +112,12 @@ nav li {
   background-color: var(--Almost-Black);
   color: var(--Almost-White);
   padding: 1rem 1.5rem;
+  border: 2.5px solid var(--Almost-Black);
+}
+
+.content button:hover {
+  background-color: var(--Almost-White);
+  color: var(--Almost-Black);
 }
 
 .content__client {
