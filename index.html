@@ -7,28 +7,29 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <header>
     <img class="logo" src="images/logo.svg" alt="logo">
-    <img class="menu__open" src="images/icon-menu.svg" alt="menu">
+    <img onclick="toggleMenu()" class="menu__open" src="images/icon-menu.svg" alt="menu">
 
-    <div class="opacity__low"></div>
+    <div onclick="toggleMenu()" id="opacityLow" class="opacity__low"></div>
 
     <nav id="nav">
       <div class="menu__close">
-        <img src="images/icon-close-menu.svg" alt="close">
+        <img onclick="toggleMenu()" src="images/icon-close-menu.svg" alt="close">
       </div>
 
       <ul class="nav__menu">
         <li class="nav__feature">
           <div>
-            <a href="#">Features</a>
-            <img src="images/icon-arrow-down.svg" alt="more">
+            <a onclick="toggleFeature()" id="featureLink" href="#">Features</a>
+            <img id="featureArrow" src="images/icon-arrow-down.svg" alt="more">
           </div>
 
-          <ul class="nav__more nav__absolute">
+          <ul id="moreFeature" class="nav__more nav__absolute">
             <li>
               <img src="images/icon-todo.svg" alt="icon-todo">
               <a href="#">Todo List</a>
@@ -47,21 +48,24 @@
             </li>
           </ul>
         </li>
-        <li>
+
+        <li class="nav__company">
           <div>
-            <a href="#">Company</a>
-            <img src="images/icon-arrow-down.svg" alt="more">
+            <a onclick="toggleCompany()" id="companyLink" href="#">Company</a>
+            <img id="companyArrow" src="images/icon-arrow-down.svg" alt="more">
           </div>
 
-          <ul class="nav__more">
+          <ul id="moreCompany" class="nav__more">
             <li><a href="#">History</a></li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </li>
+
         <li>
           <a href="#">Careers</a>
         </li>
+
         <li>
           <a href="#">About</a>
         </li>
