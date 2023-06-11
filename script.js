@@ -4,13 +4,13 @@ function toggleMenu() {
 }
 
 function toggleFeature() {
-  document.getElementById('moreFeature').classList.toggle('nav__more--feature')
-  document.getElementById('featureLink').classList.toggle('nav__feature--more')
-  document.getElementById('featureArrow').classList.toggle('nav__feature--arrow')
+  document.getElementById('featureMore').classList.toggle('menu__feature--opened')
+  document.getElementById('featureLink').classList.toggle('menu__feature--link')
+  document.getElementById('featureArrow').classList.toggle('menu__feature--arrow')
 }
 
 function toggleCompany() {
-  document.getElementById('moreCompany').classList.toggle('nav__more--company')
-  document.getElementById('companyLink').classList.toggle('nav__company--more')
-  document.getElementById('companyArrow').classList.toggle('nav__company--arrow')
+  document.getElementById('companyMore').classList.toggle('menu__company--opened')
+  document.getElementById('companyLink').classList.toggle('menu__company--link')
+  document.getElementById('companyArrow').classList.toggle('menu__company--arrow')
 }
