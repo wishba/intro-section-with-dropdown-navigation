@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <header id="header" class="header">
     <div class="header__container">
       <div class="header__image">
@@ -84,6 +85,89 @@
       </div>
 
       <ul class="main__client">
+=======
+  <header>
+    <img class="logo" src="images/logo.svg" alt="logo">
+    <img onclick="toggleMenu()" class="menu__open" src="images/icon-menu.svg" alt="menu">
+
+    <div onclick="toggleMenu()" id="opacityLow" class="opacity__low"></div>
+
+    <nav id="nav">
+      <div class="menu__close">
+        <img onclick="toggleMenu()" src="images/icon-close-menu.svg" alt="close">
+      </div>
+
+      <ul class="menu">
+        <li class="menu__feature">
+          <div>
+            <a onclick="toggleFeature()" id="featureLink" href="#">Features</a>
+            <img id="featureArrow" src="images/icon-arrow-down.svg" alt="more">
+          </div>
+
+          <ul id="featureMore" class="menu__more menu__absolute">
+            <li>
+              <img src="images/icon-todo.svg" alt="icon-todo">
+              <a href="#">Todo List</a>
+            </li>
+            <li>
+              <img src="images/icon-calendar.svg" alt="icon-calendar">
+              <a href="#">Calendar</a>
+            </li>
+            <li>
+              <img src="images/icon-reminders.svg" alt="icon-reminders">
+              <a href="#">Reminders</a>
+            </li>
+            <li>
+              <img src="images/icon-planning.svg" alt="icon-planning">
+              <a href="#">Planning</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu__company">
+          <div>
+            <a onclick="toggleCompany()" id="companyLink" href="#">Company</a>
+            <img id="companyArrow" src="images/icon-arrow-down.svg" alt="more">
+          </div>
+
+          <ul id="companyMore" class="menu__more">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Careers</a>
+        </li>
+
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+
+      <div class="user">
+        <button class="user__login">Login</button>
+        <button class="user__register">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <img class="hero__image" src="images/image-hero-desktop.png" alt="hero image">
+    </div>
+
+    <div class="content">
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button>Learn more</button>
+
+      <ul class="content__client">
+>>>>>>> b083b2403a23a0a241877344a49b1a0d808b9a1a
         <li><img src="images/client-databiz.svg" alt="client-databiz"></li>
         <li><img src="images/client-audiophile.svg" alt="client-audiophile"></li>
         <li><img src="images/client-meet.svg" alt="client-meet"></li>
@@ -92,11 +176,17 @@
     </div>
   </main>
 
+<<<<<<< HEAD
   <footer class="footer">
     Challenge by<a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">
       Frontend Mentor</a>.
     Coded by<a class="footer__link" href="linktr.ee/wishba" target="_blank">
       Wisnu Bayu</a>.
+=======
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+>>>>>>> b083b2403a23a0a241877344a49b1a0d808b9a1a
   </footer>
 </body>
 
