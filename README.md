@@ -12,9 +12,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
     -   [Built with](#built-with)
 -   [Author](#author)
 
-## Overview
-
-### The challenge
+## The challenge
 
 Users should be able to:
 
@@ -22,20 +20,18 @@ Users should be able to:
 -   View the optimal layout for the content depending on their device's screen size
 -   See hover states for all interactive elements on the page
 
-### Screenshot
+## Screenshot
 
-<img height='300' src="./Screenshot 2023-05-03 at 10-19-09 Frontend Mentor Intro section with dropdown navigation.png" alt="desktop">
-<img height='300' src="./Screenshot 2023-05-03 at 10-19-59 Frontend Mentor Intro section with dropdown navigation.png" alt="mobile">
-<img height='300' src="./Screenshot 2023-05-03 at 10-20-22 Frontend Mentor Intro section with dropdown navigation.png" alt="mobile active">
+<img height='300' src="./screenshot-desktop.png" alt="desktop">
+<img height='300' src="./screenshot-mobile.png" alt="mobile">
+<img height='300' src="./screenshot-mobile-open.png" alt="mobile active">
 
-### Links
+## Links
 
--   <a href="https://www.frontendmentor.io/solutions/responsive-navigation-with-dropdown-and-sidenav-overlay--2HK_EJNma" target="_blank" rel="noopener noreferrer">Frontend Mentor Solution</a>
+-   <a href="https://www.frontendmentor.io/solutions/responsive-navigation-with-dropdown-and-sidenav-overlay-dkgKIoagKx" target="_blank" rel="noopener noreferrer">Frontend Mentor Solution</a>
 -   <a href="https://wishba.github.io/intro-section-with-dropdown-navigation/" target="_blank" rel="noopener noreferrer">Live Site</a>
 
-## My process
-
-### Built with
+## Built with
 
 -   Semantic HTML5 markup
 -   CSS custom properties
@@ -45,4 +41,4 @@ Users should be able to:
 
 ## Author
 
--   <a href="https://linktr.ee/wishba" target="_blank" rel="noopener noreferrer">Wisnu Bayu</a>
+-   <a href="https://wishba.github.io/" target="_blank" rel="noopener noreferrer">Wisnu Bayu</a>
